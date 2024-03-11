@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <div class="menuToggle"></div>
+        <ul class="nav"> 
+            <li class="active"> <a href="#home">Home</a></li>
+            <li> <a href="#services">Services</a></li>
+            <li> <a href="#portfolio">Portfolio</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>Gautam Kumar</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus deserunt reiciendis nisi iusto fuga provident nam mollitia nostrum ullam numquam quos ut sunt voluptas ex, animi sit veniam alias.</p>
+            <a href="#" class="btn"> Contact Me</a>
+                </div>
+                <img src="kartik.png" class="gautam">
+     </section>
+     <section id="services">
+      <div class="secText">
+          <h2>What I Am Great At</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, impedit dicta numquam similique odit nobis modi eius! Aliquid, soluta quaerat. Debitis laboriosam sunt reiciendis fugiat! Quaerat dolore tempora voluptatibus debitis.</p>
+      </div>
+      <div class="content">
+          <div class="serviceBx">
+             <img src="tempsnip.png">
+             <h3>Web Designing</h3>
+          </div>
+      <div class="serviceBx">
+          <img src="tempsnip3.png">
+          <h3>Web Development</h3>
+          </div>
+          <div class="serviceBx">
+              <img src="download.png">
+              <h3>Android Apps</h3> 
+              </div>
+              <div class="serviceBx">
+                  <img src="download (2).png">
+                  <h3>Video Editing</h3>
+          </div>
+      </div>
+      <div class="center">
+          <a href="#" class="btn">Hire Me</a>
+      </div>
+  </section>
+
+    <section id="portfolio">
+        <div class="secText">
+            <h2>My Masterpiece Collection</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, impedit dicta numquam similique odit nobis modi eius! Aliquid, soluta quaerat. Debitis laboriosam sunt reiciendis fugiat! Quaerat dolore tempora voluptatibus debitis.</p>
+        </div>
+        <div class="content">
+            <div class="imgBx">
+                <img src="pexels-jens-mahnke-1161528.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="pexels-lukas-952360.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="pexels-pok-rie-130879.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="pexels-scott-r-296357.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="pexels-chelsey-horne-745234.jpg">
+            </div>
+            <div class="imgBx">
+                <img src="pexels-hamann-la-947785.jpg">
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+    <section id="contact">
+    <div class="secText">
+        <h2>Ways to Contact Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, impedit dicta numquam similique odit nobis modi eius! Aliquid, soluta quaerat. Debitis laboriosam sunt reiciendis fugiat! Quaerat dolore tempora voluptatibus debitis.</p>
+    </div>
+    <div class="content">
+        <a href="mailto:kartikkumar5020905@gmail.com">
+            <ion-icon name="mail-outline"></ion-icon>kartikkumar5020905@gmail.com
+        </a>
+        <a href="#">
+            <ion-icon name="call-outline"></ion-icon>
+            +91 89203 64920
+        </a>
+        <a href="https://www.instagram.com/kartikkumar41400">
+            <ion-icon name="logo-instagram"></ion-icon>
+            Instagram
+        </a>
+        <a href="https://wa.me/8920364920"><ion-icon name="logo-whatsapp"></ion-icon>
+            Whatsapp
+        </a>
+    </div>
+    <div class="center">
+        <p class="copyrights">Copyright Ⓒ 2023 <a href="#">
+            Gautam Kumar</a>. All Right Reserved.
+        </p>
+    </div>
+   </section>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    let list = document.querySelectorAll('nav li');
+    function active(){
+        list.forEach((i) => 
+        i.classList.remove('active'));
+        this.classList.add('active');
+    }
+    list.forEach((i) =>
+    i.addEventListener('click',active));
+
+    let menuToggle = document.querySelector('.menuToggle');
+    let header = document.querySelector('header');
+    menuToggle.onclick = function(){
+        header.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
